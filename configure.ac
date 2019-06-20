@@ -14,11 +14,17 @@ AC_PROG_LIBTOOL
 
 AC_CANONICAL_HOST
 # Check for operating system
-AC_MSG_CHECKING([whether we need platform-specific build settings])
-case $host_os in
-  darwin* )
-        CXXFLAGS+=" -stdlib=libc++"
-        ;;
+AC_MSG_CHECKING([whether to enable WIN32 specific flags])
+case "$host_os" in
+*mingw*)
+        win32=true
+        AC_MSG_RESULT([yes])
+	AC_CHECK_TOOL(WINDRES, windres)
+  ;;
+*)
+        win32=false
+        AC_MSG_RESULT([no])
+  ;;
 esac
 
 # Checks for libraries.
