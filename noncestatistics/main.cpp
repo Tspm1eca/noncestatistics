@@ -1,17 +1,21 @@
-
+//
+// main.cpp
+// noncestatistics
+//
 
 #include <iostream>
 #include <unistd.h>
 #include <getopt.h>
-#include "idevicerestore.h"
-#include "recovery.h"
-#include "common.h"
-#include "normal.h"
 #include <signal.h>
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
 #include <fstream>
 #include <unistd.h>
+
+#include "idevicerestore.h"
+#include "recovery.h"
+#include "common.h"
+#include "normal.h"
 #include "stats.hpp"
 #include "all_noncestatistics.h"
 
@@ -38,8 +42,6 @@ inline bool exist(const std::string& name)
 void cmd_help(){
     printf("Usage: noncestatistics [OPTIONS] FILE\n");
     printf("tool to get a lot of nonces from various iOS devices/versions\n\n");
-    
-
     printf("  -h, --help             prints usage information\n");
     printf("  -e, --ecid ECID        manually specify ECID of the device. Uses any device if not specified\n");
     printf("  -t, --times amount     speficy how many NONCES are collected. If not specified it will collect nonces until you enter ctrl+c\n");

@@ -1,7 +1,13 @@
-#include "stats.hpp"
+//
+// stats.cpp
+// noncestatistics
+//
+
 #include <iostream>
 #include <regex>
 #include <fstream>
+
+#include "stats.hpp"
 
 std::vector<std::pair<std::string, int> > sortNonceList(std::map < std::string, int>& nonceList){
     std::vector<std::pair<std::string, int> > sortedList;
@@ -13,7 +19,6 @@ std::vector<std::pair<std::string, int> > sortNonceList(std::map < std::string, 
     
     return sortedList;
 }
-
 
 void cmd_statistics(const char* filename){
     int amount = 0;
