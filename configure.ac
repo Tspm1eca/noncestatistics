@@ -26,6 +26,7 @@ case "$host_os" in
         AC_MSG_RESULT([no])
   ;;
 esac
+AM_CONDITIONAL(WIN32, test x$win32 = xtrue)
 
 # Checks for libraries.
 PKG_CHECK_MODULES(libplist, libplist >= 1.0)
