@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5698694222BC0032003A3E2B /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5698694122BC0031003A3E2B /* libcrypto.a */; };
+		5698694422BC0043003A3E2B /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5698694322BC0043003A3E2B /* libimobiledevice.a */; };
+		5698694622BC004B003A3E2B /* libirecovery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5698694522BC004B003A3E2B /* libirecovery.a */; };
+		5698694822BC0057003A3E2B /* libplist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5698694722BC0057003A3E2B /* libplist.a */; };
+		5698694A22BC0062003A3E2B /* libusbmuxd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5698694922BC0062003A3E2B /* libusbmuxd.a */; };
+		5698694B22BC01CF003A3E2B /* endianness.h in Sources */ = {isa = PBXBuildFile; fileRef = E978458B1D7EFD5B00798C24 /* endianness.h */; };
+		5698694D22BC0570003A3E2B /* all.h in Sources */ = {isa = PBXBuildFile; fileRef = 5698694C22BC056D003A3E2B /* all.h */; };
 		E97845811D7EF5F400798C24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E97845801D7EF5F400798C24 /* main.cpp */; };
 		E97845921D7EFD5B00798C24 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = E97845881D7EFD5B00798C24 /* common.c */; };
 		E97845931D7EFD5B00798C24 /* dfu.c in Sources */ = {isa = PBXBuildFile; fileRef = E97845891D7EFD5B00798C24 /* dfu.c */; };
@@ -14,9 +21,6 @@
 		E97845951D7EFD5B00798C24 /* normal.c in Sources */ = {isa = PBXBuildFile; fileRef = E978458E1D7EFD5B00798C24 /* normal.c */; };
 		E97845961D7EFD5B00798C24 /* recovery.c in Sources */ = {isa = PBXBuildFile; fileRef = E97845911D7EFD5B00798C24 /* recovery.c */; };
 		E98204B21D82FEB90005560C /* stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E98204B01D82FEB90005560C /* stats.cpp */; };
-		E9AD3FBD1D82D1CA007C843E /* libirecovery.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AD3FBC1D82D1CA007C843E /* libirecovery.2.dylib */; };
-		E9AD3FBF1D82D1E6007C843E /* libplist.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AD3FBE1D82D1E6007C843E /* libplist.3.dylib */; };
-		E9AD3FC31D82D22B007C843E /* libimobiledevice.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AD3FC21D82D22B007C843E /* libimobiledevice.6.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5698694122BC0031003A3E2B /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../../usr/local/lib/libcrypto.a; sourceTree = "<group>"; };
+		5698694322BC0043003A3E2B /* libimobiledevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libimobiledevice.a; path = ../../../../../usr/local/lib/libimobiledevice.a; sourceTree = "<group>"; };
+		5698694522BC004B003A3E2B /* libirecovery.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libirecovery.a; path = ../../../../../usr/local/lib/libirecovery.a; sourceTree = "<group>"; };
+		5698694722BC0057003A3E2B /* libplist.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libplist.a; path = ../../../../../usr/local/lib/libplist.a; sourceTree = "<group>"; };
+		5698694922BC0062003A3E2B /* libusbmuxd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libusbmuxd.a; path = ../../../../../usr/local/lib/libusbmuxd.a; sourceTree = "<group>"; };
+		5698694C22BC056D003A3E2B /* all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all.h; sourceTree = "<group>"; };
 		E978457D1D7EF5F400798C24 /* noncestatistics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = noncestatistics; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97845801D7EF5F400798C24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E97845871D7EFD5B00798C24 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -47,9 +57,6 @@
 		E97845911D7EFD5B00798C24 /* recovery.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recovery.c; sourceTree = "<group>"; };
 		E98204B01D82FEB90005560C /* stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stats.cpp; sourceTree = "<group>"; };
 		E98204B11D82FEB90005560C /* stats.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stats.hpp; sourceTree = "<group>"; };
-		E9AD3FBC1D82D1CA007C843E /* libirecovery.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libirecovery.2.dylib; path = ../../../../../usr/local/lib/libirecovery.2.dylib; sourceTree = "<group>"; };
-		E9AD3FBE1D82D1E6007C843E /* libplist.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libplist.3.dylib; path = ../../../../../usr/local/Cellar/libplist/1.12/lib/libplist.3.dylib; sourceTree = "<group>"; };
-		E9AD3FC21D82D22B007C843E /* libimobiledevice.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimobiledevice.6.dylib; path = ../../../../../usr/local/lib/libimobiledevice.6.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,23 +64,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9AD3FC31D82D22B007C843E /* libimobiledevice.6.dylib in Frameworks */,
-				E9AD3FBD1D82D1CA007C843E /* libirecovery.2.dylib in Frameworks */,
-				E9AD3FBF1D82D1E6007C843E /* libplist.3.dylib in Frameworks */,
+				5698694822BC0057003A3E2B /* libplist.a in Frameworks */,
+				5698694222BC0032003A3E2B /* libcrypto.a in Frameworks */,
+				5698694422BC0043003A3E2B /* libimobiledevice.a in Frameworks */,
+				5698694622BC004B003A3E2B /* libirecovery.a in Frameworks */,
+				5698694A22BC0062003A3E2B /* libusbmuxd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5698694022BC000D003A3E2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5698694122BC0031003A3E2B /* libcrypto.a */,
+				5698694322BC0043003A3E2B /* libimobiledevice.a */,
+				5698694522BC004B003A3E2B /* libirecovery.a */,
+				5698694722BC0057003A3E2B /* libplist.a */,
+				5698694922BC0062003A3E2B /* libusbmuxd.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5698694E22BC0578003A3E2B /* idevicerestore */ = {
+			isa = PBXGroup;
+			children = (
+				E97845881D7EFD5B00798C24 /* common.c */,
+				E97845871D7EFD5B00798C24 /* common.h */,
+				E97845891D7EFD5B00798C24 /* dfu.c */,
+				E978458A1D7EFD5B00798C24 /* dfu.h */,
+				E978458B1D7EFD5B00798C24 /* endianness.h */,
+				E978458C1D7EFD5B00798C24 /* idevicerestore.c */,
+				E978458D1D7EFD5B00798C24 /* idevicerestore.h */,
+				E978458E1D7EFD5B00798C24 /* normal.c */,
+				E978458F1D7EFD5B00798C24 /* normal.h */,
+				E97845911D7EFD5B00798C24 /* recovery.c */,
+				E97845901D7EFD5B00798C24 /* recovery.h */,
+			);
+			name = idevicerestore;
+			sourceTree = "<group>";
+		};
 		E97845741D7EF5F400798C24 = {
 			isa = PBXGroup;
 			children = (
-				E9AD3FC21D82D22B007C843E /* libimobiledevice.6.dylib */,
-				E9AD3FBE1D82D1E6007C843E /* libplist.3.dylib */,
-				E9AD3FBC1D82D1CA007C843E /* libirecovery.2.dylib */,
 				E978457F1D7EF5F400798C24 /* noncestatistics */,
 				E978457E1D7EF5F400798C24 /* Products */,
+				5698694022BC000D003A3E2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,17 +125,8 @@
 		E978457F1D7EF5F400798C24 /* noncestatistics */ = {
 			isa = PBXGroup;
 			children = (
-				E97845871D7EFD5B00798C24 /* common.h */,
-				E97845881D7EFD5B00798C24 /* common.c */,
-				E97845891D7EFD5B00798C24 /* dfu.c */,
-				E978458A1D7EFD5B00798C24 /* dfu.h */,
-				E978458B1D7EFD5B00798C24 /* endianness.h */,
-				E978458C1D7EFD5B00798C24 /* idevicerestore.c */,
-				E978458D1D7EFD5B00798C24 /* idevicerestore.h */,
-				E978458E1D7EFD5B00798C24 /* normal.c */,
-				E978458F1D7EFD5B00798C24 /* normal.h */,
-				E97845901D7EFD5B00798C24 /* recovery.h */,
-				E97845911D7EFD5B00798C24 /* recovery.c */,
+				5698694C22BC056D003A3E2B /* all.h */,
+				5698694E22BC0578003A3E2B /* idevicerestore */,
 				E97845801D7EF5F400798C24 /* main.cpp */,
 				E98204B01D82FEB90005560C /* stats.cpp */,
 				E98204B11D82FEB90005560C /* stats.hpp */,
@@ -116,6 +144,7 @@
 				E97845791D7EF5F400798C24 /* Sources */,
 				E978457A1D7EF5F400798C24 /* Frameworks */,
 				E978457B1D7EF5F400798C24 /* CopyFiles */,
+				5698694F22BC0737003A3E2B /* Version bump */,
 			);
 			buildRules = (
 			);
@@ -132,20 +161,20 @@
 		E97845751D7EF5F400798C24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Malte Poll";
 				TargetAttributes = {
 					E978457C1D7EF5F400798C24 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = E97845781D7EF5F400798C24 /* Build configuration list for PBXProject "noncestatistics" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 			);
 			mainGroup = E97845741D7EF5F400798C24;
 			productRefGroup = E978457E1D7EF5F400798C24 /* Products */;
@@ -157,11 +186,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5698694F22BC0737003A3E2B /* Version bump */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Version bump";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sed -i '.bak' \"s/.*NONCESTATISTICS_VERSION_COUNT.*/#define NONCESTATISTICS_VERSION_COUNT \\\"$(git rev-list --count HEAD)\\\"/\" ./noncestatistics/all.h 2>/dev/null || sed -i \"s/.*NONCESTATISTICS_VERSION_COUNT.*/#define NONCESTATISTICS_VERSION_COUNT \\\"$(git rev-list --count HEAD)\\\"/\" ./noncestatistics/all.h 2>/dev/null\nsed -i '.bak' \"s/.*NONCESTATISTICS_VERSION_SHA.*/#define NONCESTATISTICS_VERSION_SHA \\\"$(git rev-parse HEAD)\\\"/\" ./noncestatistics/all.h 2>/dev/null || sed -i \"s/.*NONCESTATISTICS_VERSION_SHA.*/#define NONCESTATISTICS_VERSION_SHA \\\"$(git rev-parse HEAD)\\\"/\" ./noncestatistics/all.h 2>/dev/null\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E97845791D7EF5F400798C24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5698694D22BC0570003A3E2B /* all.h in Sources */,
 				E97845961D7EFD5B00798C24 /* recovery.c in Sources */,
 				E98204B21D82FEB90005560C /* stats.cpp in Sources */,
 				E97845931D7EFD5B00798C24 /* dfu.c in Sources */,
@@ -169,6 +220,7 @@
 				E97845921D7EFD5B00798C24 /* common.c in Sources */,
 				E97845941D7EFD5B00798C24 /* idevicerestore.c in Sources */,
 				E97845811D7EF5F400798C24 /* main.cpp in Sources */,
+				5698694B22BC01CF003A3E2B /* endianness.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,18 +231,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -212,7 +275,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -223,18 +291,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -250,7 +329,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -259,28 +343,36 @@
 		E97845851D7EF5F400798C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					/usr/local/Cellar/libplist/1.12/lib,
 					/usr/local/lib,
+					/usr/lib,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tihmstar.noncestatistics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		E97845861D7EF5F400798C24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					/usr/local/Cellar/libplist/1.12/lib,
 					/usr/local/lib,
+					/usr/lib,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tihmstar.noncestatistics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
