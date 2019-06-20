@@ -67,9 +67,11 @@ int idevicerestore_start(struct idevicerestore_client_t* client);
 
 int check_mode(struct idevicerestore_client_t* client);
 const char* check_hardware_model(struct idevicerestore_client_t* client);
+int is_image4_supported(struct idevicerestore_client_t* client);
 int get_ecid(struct idevicerestore_client_t* client, uint64_t* ecid);
 int get_ap_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
 int get_sep_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
+
 #ifdef __cplusplus
 }
 #endif

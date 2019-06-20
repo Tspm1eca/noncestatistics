@@ -39,15 +39,15 @@ struct normal_client_t {
 	plist_t tss;
 };
 
-
 int normal_check_mode(struct idevicerestore_client_t* client);
 const char* normal_check_hardware_model(struct idevicerestore_client_t* client);
 int normal_client_new(struct idevicerestore_client_t* client);
 void normal_client_free(struct idevicerestore_client_t* client);
 int normal_open_with_timeout(struct idevicerestore_client_t* client);
 int normal_get_ecid(struct idevicerestore_client_t* client, uint64_t* ecid);
-int normal_get_ap_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
+int normal_is_image4_supported(struct idevicerestore_client_t* client);
 int normal_get_sep_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
+int normal_get_ap_nonce(struct idevicerestore_client_t* client, unsigned char** nonce, int* nonce_size);
 int normal_enter_recovery(struct idevicerestore_client_t* client);
     
 #ifdef __cplusplus
