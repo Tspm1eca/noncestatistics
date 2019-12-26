@@ -1,19 +1,26 @@
-
+//
+//  main.cpp
+//  noncestatistics
+//
+//  Created by tihmstar on 08.09.16.
+//  Copyright © 2016 tihmstar. All rights reserved.
+//
 
 #include <iostream>
 #include <unistd.h>
 #include <getopt.h>
-#include "idevicerestore.h"
-#include "recovery.h"
-#include "common.h"
-#include "normal.h"
 #include <signal.h>
 #include <libimobiledevice/libimobiledevice.h>
 #include <libimobiledevice/lockdown.h>
 #include <fstream>
+#include <vector>
 #include <unistd.h>
+
+#include "idevicerestore.h"
+#include "recovery.h"
+#include "common.h"
+#include "normal.h"
 #include "stats.hpp"
-#include "all_noncestatistics.h"
 
 #define USEC_PER_SEC 1000000
 
@@ -101,7 +108,7 @@ static void cancelNonceCollection(int signo){
 }
 
 int main(int argc, const char * argv[]) {
-    printf("Version: " VERSION_COMMIT_SHA_NONCESTATISTICS" - " VERSION_COMMIT_COUNT_NONCESTATISTICS"\n");
+    printf("Version: " VERSION_COMMIT_SHA " - " VERSION_COMMIT_COUNT "\n");
 
     char* statFilename = 0;
     bool only_abort = false;
