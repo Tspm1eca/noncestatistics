@@ -1,5 +1,5 @@
 //
-//  stats.cpp
+//  stats.hpp
 //  noncestatistics
 //
 //  Created by tihmstar on 09.09.16.
